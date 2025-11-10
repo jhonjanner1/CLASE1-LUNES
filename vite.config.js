@@ -1,8 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-export default {
-  // otras configuraciones...
-  build: {
-    outDir: 'build', // cambia la carpeta de salida
-  }
-}
+
+export default defineConfig({
+  plugins: [react()],
+  base: "/CLASE1-LUNES/", // Cambiado para Netlify
+});
